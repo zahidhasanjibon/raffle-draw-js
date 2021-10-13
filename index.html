@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle Draw</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main_div">
+        <h1>RAFFLE DRAW APP</h1>
+        <div class="container">
+
+            <div class="left_div">
+                <div>
+                    <H3>Enter All Names <span style="font-size: 11px;"> *there should be a coma ',' between the names </span></H3>
+                    <textarea id="txtarea" rows="13" cols="60"></textarea><br>
+                    <h6>please press Enter after adding names</h6>
+                    <button class="btn btn-primary my-3" type="button" data-toggle="collapse"
+                        data-target="#multiCollapseExample1" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">show all students</button>
+
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div class="card card-body">
+                                    <ul class="list-group" id="name-list">
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                </div>
+            </div>
+
+            <div class="right_div">
+                <div>
+                    <h3>output Display</h3>
+                    <input type="text" id="dsparea" placeholder="Display"><br>
+                    <button id="trybtn">give a try</button>
+                    <div class="inner">
+                        <ul id="uliteam">
+                            <li>First Winner:<strong><span id="first"></span></strong></li>
+                            <li>Second Winner:<strong><span id="second"></span></strong></li>
+                            <li>Third Winner:<strong><span id="third"></span></strong></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
